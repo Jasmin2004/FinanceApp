@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Asset/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="Asset/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Finance App</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="nav-container border-bottom">
+      <div class="row">
+        <div class="col p-0">
+          <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img class="navbar-logo" src="Asset/image/logo.png" alt=""></a>
+              <!-- Toggle Button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Offcanvas (RIGHT → LEFT) -->
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#" data-bs-toggle="dropdown">
+                        Loans <span style="color: #ff6600;"><i class="fa-solid fa-angle-down"></i></span>
+                      </a>
+                      <ul class="dropdown-menu custom-dropdown">
+                        <li><a class="dropdown-item" href="#">Personal Loan</a></li>
+                        <li><a class="dropdown-item" href="#">Loan Against Property</a></li>
+                        <li><a class="dropdown-item" href="#">Business Loan</a></li>
+                        <li><a class="dropdown-item" href="#">Two Wheeler Loan</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#" data-bs-toggle="dropdown">
+                        Calculators <span style="color: #ff6600;"><i class="fa-solid fa-angle-down"></i></span>
+                      </a>
+                      <ul class="dropdown-menu custom-dropdown">
+                        <li><a class="dropdown-item" href="#">Loan EMI Calculator</a></li>
+                        <li><a class="dropdown-item" href="#">Bank EMI Calculator</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">24K Digital Gold</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Credit Report</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Refer & Earn</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Repayments</a>
+                    </li>
+                    <a class="signin-btn" href="#">Sign In</a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row banner-main-container gx-0">
+      <div class="col-md-6">
+        <div class="banner-img-container">
+          <img class="banner-img" src="Asset/image/banner-1.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-6 banner-text-main-conteiner">
+        <div class="banner-text-conteiner">
+          <div class="row">
+            <div class="col-12 banner-text-One banner-animate">
+              <p>Instant Personal Loans</p>
+            </div>
+            <div class="col-12 banner-text-Two banner-animate">
+              <p>Trusted by Over 7 Crore Indians</p>
+            </div>
+            <div class="col-12 banner-list-container banner-animate">
+              <ul>
+                <li>From 6,000 to 10 Lakhs</li>
+                <li>100% Online Process</li>
+                <li>10 Minute Disbursal</li>
+                <li>Direct Bank Transfer</li>
+              </ul>
+            </div>
+            <div class="col-12 banner-button-container">
+              <button class="banner-button-subcontainer">
+                <a href="#">Get Loan Now</a>
+              </button>
+            </div>
+            <div class="col-12 mt-4">
+              <div class="row">
+                <div class="col-6">
+                  <img class="googleplay-img" src="Asset/image/GooglePlay.svg" alt="">
+                </div>
+                <div class="col-6">
+                  <img class="appstore-img" src="Asset/image/AppStore.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row about-main-container">
+      <div class="col-lg-6 about-image-container">
+        <img class="about-image" src="Asset/image/bg-about-us.webp" alt="">
+      </div>
+      <div class="col-lg-6 about-text-container">
+        <div class="row">
+          <div class="col-12 about-text-heading">
+            <p class="about-title">About Us</p>
+          </div>
+          <div class="col-12 about-text-para">
+            <p>KreditBee is a platform that facilitates loan transactions between borrowers and personal loan providers
+              such as NBFCs/Banks. All loan applications are approved and sanctioned by the NBFCs/Banks registered with
+              the RBI. All details are clearly stated upfront during the Loan application.</p>
+            <p>KreditBee takes pride in being inclusive as an Instant Loan provider, Users can apply for Personal Loans
+              up to 10 Lakhs as per the requirement. The documentation needed is minimal and the entire process starting
+              from registration to disbursement takes an average of 10 minutes. The application process is completely
+              online and on approval, the funds are immediately transferred to the bank account of the applicant. There
+              are a number of unique Loan Offers available with simple repayment plans.</p>
+          </div>
+          <div class="col-12 about-button-container">
+            <button class="about-button-subcontainer">
+              <a href="#">Know More</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 what-we-offer-text-container">
+        <p class="what-we-offer-text">What We Offer</p>
+      </div>
+    </div>
+    <div class="row what-we-offer-main-container">
+      <div class="col-lg-4">
+        <div class="row">
+          <div class="col-2 what-we-offer-icon-container">
+            <img class="what-we-offer-icon" src="Asset/image/ic-what-we-offer-1.svg" alt="">
+          </div>
+          <div class="col-10">
+            <p class="what-we-offer-para-title">Personal Loan</p>
+            <p class="what-we-offer-para">Need funds urgently? Get a personal loan from ₹6,000 to ₹10 Lakhs with
+              flexible EMIs from 6 to 60 months.Easy online application, quick disbursal, and financial support when you
+              need it.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 what-we-offer-icon-container">
+            <img class="what-we-offer-icon" src="Asset/image/ic-what-we-offer-2.svg" alt="">
+          </div>
+          <div class="col-10">
+            <p class="what-we-offer-para-title">Business Loan</p>
+            <p class="what-we-offer-para">Expand your business with a loan from ₹6,000 to ₹1 Crores, featuring flexible
+              repayment from 6 to 48 months. Quick approval, hassle-free process, and funds to help your business grow
+              seamlessly.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 what-we-offer-image-container">
+        <img class="what-we-offer-image" src="Asset/image/ic-what-we-offer.png" alt="">
+      </div>
+      <div class="col-lg-4">
+        <div class="row">
+          <div class="col-2 what-we-offer-icon-container">
+            <img class="what-we-offer-icon" src="Asset/image/ic-what-we-offer-3.svg" alt="">
+          </div>
+          <div class="col-10">
+            <p class="what-we-offer-para-title">Two Wheeler Loan</p>
+            <p class="what-we-offer-para">Get on the road with a two-wheeler loan from ₹10,000 to ₹5 Lakhs. Benefit from
+              easy application, quick approval, and flexible repayment options from 6 to 60 months to own your dream
+              bike or scooter hassle-free.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 what-we-offer-icon-container">
+            <img class="what-we-offer-icon" src="Asset/image/ic-what-we-offer-4.svg" alt="">
+          </div>
+          <div class="col-10">
+            <p class="what-we-offer-para-title">Loan Against Property</p>
+            <p class="what-we-offer-para">Unlock the value of your property with loans from ₹5 Lakhs to ₹5 Crores. Enjoy
+              flexible repayment options from 12 to 240 months, competitive interest rates, and quick processing to meet
+              your financial needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid ad-super-container">
+    <div class="row gx-0">
+      <div class="col-lg-4 ad-sub-container">
+        <div class="ad-image-container">
+          <img class="ad-image" src="Asset/image/ic-downloads.svg" alt="">
+        </div>
+        <div class="ad-text-container">
+          <p class="ad-text-1 ad-text">OVER</p>
+          <p class="ad-text-2 ad-text">7 Crore</p>
+          <p class="ad-text-3 ad-text">App Downloads</p>
+        </div>
+      </div>
+      <div class="col-lg-4 ad-sub-container">
+        <div class="ad-image-container">
+          <img class="ad-image" src="Asset/image/ic-disbursals.svg" alt="">
+        </div>
+        <div class="ad-text-container">
+          <p class="ad-text-1 ad-text">OVER</p>
+          <p class="ad-text-2 ad-text">₹62,000 Crores</p>
+          <p class="ad-text-3 ad-text">Total Credit Given</p>
+        </div>
+      </div>
+      <div class="col-lg-4 ad-app-download-image-container">
+        <img class="ad-app-download-image" src="Asset/image/GooglePlay.svg" alt="">
+        <img class="ad-app-download-image" src="Asset/image/AppStore.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="why-customer-wrapper">
+    <div class="container-fluid why-choose-wrapper">
+      <div class="row">
+        <div class="col-12 why-choose-header-container">
+          <p class="why-choose-header">Why Choose PavitraBee?</p>
+        </div>
+      </div>
+      <div class="row row-cols-xl-3 row-cols-lg-2 row-cols-1 why-choose-box-main-container gy-5 gx-4">
+        <div class="col why-choose-box-container">
+          <img class="why-choose-box-image" src="Asset/image/ic-1.svg" alt="">
+          <div class="why-choose-text-content">
+            <p class="why-choose-box-text1">Lower Interest Rates</p>
+            <p class="why-choose-box-text2">Get loans for multiple purposes at lower interest rates to suit your needs
+            </p>
+          </div>
+        </div>
+        <div class="col why-choose-box-container">
+          <img class="why-choose-box-image" src="Asset/image/ic-2.svg" alt="">
+          <div class="why-choose-text-content">
+            <p class="why-choose-box-text1">Fast Processing and Disbursal</p>
+            <p class="why-choose-box-text2">Apply online, check your eligibility and get money directly in your bank in
+              10
+              minutes</p>
+          </div>
+        </div>
+        <div class="col why-choose-box-container">
+          <img class="why-choose-box-image" src="Asset/image/ic-3.svg" alt="">
+          <div class="why-choose-box-content">
+            <p class="why-choose-box-text1">Easy Repayment Options</p>
+            <p class="why-choose-box-text2">Repay the loan amount in easy EMI with flexible tenure options</p>
+          </div>
+        </div>
+        <div class="col why-choose-box-container offset-container">
+          <img class="why-choose-box-image" src="Asset/image/ic-4.svg" alt="">
+          <div class="why-choose-box-context">
+            <p class="why-choose-box-text1">100% Paperless</p>
+            <p class="why-choose-box-text2">No paperwork or physical documentation is required, and you can apply and
+              get a personal loan completely online.</p>
+          </div>
+        </div>
+        <div class="col why-choose-box-container">
+          <img class="why-choose-box-image" src="Asset/image/ic-5.svg" alt="">
+          <div class="why-choose-box-content">
+            <p class="why-choose-box-text1">Safe, Secure and Transparent</p>
+            <p class="why-choose-box-text2">Our loan application process is fully secured and safe and there are no
+              hidden charges.</p>
+          </div>
+        </div>
+        <div class="col why-choose-box-container">
+          <img class="why-choose-box-image" src="Asset/image/ic-6.svg" alt="">
+          <div class="why-choose-box-content">
+            <p class="why-choose-box-text1">Collateral Free</p>
+            <p class="why-choose-box-text2">No collateral is required to apply for our personal loans.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row customer-main-container">
+        <div class="col-md-3 customer-sub-container">
+          <div class="customer-text-container">
+            <p class="customer-text-1 customer-text">OVER</p>
+            <p class="customer-text-2 customer-text">5.1 Crore</p>
+            <p class="customer-text-3 customer-text">Loan Disbursed</p>
+          </div>
+        </div>
+        <div class="col-md-3 customer-sub-container">
+          <div class="customer-text-container">
+            <p class="customer-text-1 customer-text">OVER</p>
+            <p class="customer-text-2 customer-text">1.4 Crore</p>
+            <p class="customer-text-3 customer-text">Loan Customers</p>
+          </div>
+        </div>
+        <div class="col-md-3 customer-sub-container">
+          <div class="customer-text-container">
+            <p class="customer-text-1 customer-text">OVER</p>
+            <p class="customer-text-2 customer-text">61 Lakh</p>
+            <p class="customer-text-3 customer-text">Active Users</p>
+          </div>
+        </div>
+        <div class="col-md-3 customer-sub-container">
+          <div class="customer-text-container">
+            <p class="customer-text-1 customer-text">OVER</p>
+            <p class="customer-text-2 customer-text">10 Lakh</p>
+            <p class="customer-text-3 customer-text">Max. Loan Amount</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- news & blog -->
+  <div class="container-fluid news-blog-main-container">
+    <div class="row">
+      <!-- News content -->
+      <div class="col-lg-6 news-blog-header-container">
+        <p class="news-blog-header">PavitraBee In News</p>
+        <div class="row news-blog-submain-container">
+          <div class="col-5 news-blog-image-container">
+            <img class="news-blog-image" src="Asset/image/news1.avif" alt="">
+          </div>
+          <div class="col-6 news-blog-text-container">
+            <p class="news-blog-text1">Interim Budget 2024 reactions: Corpus of ₹1 lakh crore for tech sector is
+              positive measure, says Lt..</p>
+            <a href="#" class="news-blog-text2">Read More</a>
+            <p class="news-blog-text3">ET Goverment </br>1st February 2024</p>
+          </div>
+        </div>
+        <div class="row news-blog-submain-container">
+          <div class="col-5 news-blog-image-container">
+            <img class="news-blog-image" src="Asset/image/news2.avif" alt="">
+          </div>
+          <div class="col-6 news-blog-text-container">
+            <p class="news-blog-text1">Is a Personal Loan Right for You? 5 Questions to Ask Yourself Before Taking
+              Loan..</p>
+            <a href="#" class="news-blog-text2">Read More</a>
+            <p class="news-blog-text3">Timesnownews </br>30th January 2024</p>
+          </div>
+        </div>
+        <div class="row news-blog-submain-container">
+          <div class="col-5 news-blog-image-container">
+            <img class="news-blog-image" src="Asset/image/news3.avif" alt="">
+          </div>
+          <div class="col-6 news-blog-text-container">
+            <p class="news-blog-text1">Wedding Expenses: How personal loan help you keep your plans intact..</p>
+            <a href="#" class="news-blog-text2">Read More</a>
+            <p class="news-blog-text3">Money9 </br>27th January 2024</p>
+          </div>
+        </div>
+      </div>
+      <!-- Blog content -->
+      <div class="col-lg-6 news-blog-header-container">
+        <p class="news-blog-header-2">Our Top Blogs</p>
+        <div class="row news-blog-submain-container">
+          <div class="col-5 news-blog-image-container">
+            <img class="news-blog-image" src="Asset/image/blog1.png" alt="">
+          </div>
+          <div class="col-6 news-blog-text-container">
+            <p class="news-blog-text1">How To Change Your Name on Driving Licence in India?..</p>
+            <a href="#" class="news-blog-text2">Read More</a>
+            <p class="news-blog-text3">By PavitraBee</p>
+          </div>
+        </div>
+        <div class="row news-blog-submain-container">
+          <div class="col-5 news-blog-image-container">
+            <img class="news-blog-image" src="Asset/image/blog2.png" alt="">
+          </div>
+          <div class="col-6 news-blog-text-container">
+            <p class="news-blog-text1">Driving Licence Test Questions and Answers..</p>
+            <a href="#" class="news-blog-text2">Read More</a>
+            <p class="news-blog-text3">By PavitraBee</p>
+          </div>
+        </div>
+        <div class="row news-blog-submain-container">
+          <div class="col-5 news-blog-image-container">
+            <img class="news-blog-image" src="Asset/image/blog3.png" alt="">
+          </div>
+          <div class="col-6 news-blog-text-container">
+            <p class="news-blog-text1">International Driving Licence in India - How to Apply Online..</p>
+            <a href="#" class="news-blog-text2">Read More</a>
+            <p class="news-blog-text3">By PavitraBee</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- news & blog after 992px -->
+  <div class="container-fluid news-blog-after-992px">
+    <div class="row news-blog-main-container-992">
+      <p class="news-blog-header-992">PavitraBee In News</p>
+      <div class="col-11 news-blog-header-container">
+        <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators -->
+          <div class="carousel-indicators custom-indicators">
+            <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="blog-card">
+                <img src="Asset/image/news1.avif" class="d-block w-100 blog-img" alt="Blog Image">
+                <div class="blog-content">
+                  <h5 class="blog-title">
+                    Interim Budget 2024 reactions: Corpus of ₹1 lakh crore for tech sector is positive measure, says
+                    Lt..
+                  </h5>
+                  <a href="#" class="read-more">Read More</a>
+                  <p class="blog-meta">ET Goverment 1st February 2024</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="blog-card">
+                <img src="Asset/image/news2.avif" class="d-block w-100 blog-img" alt="Blog Image">
+                <div class="blog-content">
+                  <h5 class="blog-title">
+                    Is a Personal Loan Right for You? 5 Questions to Ask Yourself..
+                  </h5>
+                  <a href="#" class="read-more">Read More</a>
+                  <p class="blog-meta">Timesnownews 30th January 2024</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="blog-card">
+                <img src="Asset/image/news3.avif" class="d-block w-100 blog-img" alt="Blog Image">
+                <div class="blog-content">
+                  <h5 class="blog-title">
+                    Wedding Expenses: How personal loan help you keep your plans intact..
+                  </h5>
+                  <a href="#" class="read-more">Read More</a>
+                  <p class="blog-meta">Money9 | 27th January 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid news-blog-after-992px">
+    <div class="row news-blog-main-container-992">
+      <p class="news-blog-header-992">PavitraBee In News</p>
+      <div class="col-11 news-blog-header-container">
+        <div id="blogCarousel2" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators -->
+          <div class="carousel-indicators custom-indicators">
+            <button type="button" data-bs-target="#blogCarousel2" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#blogCarousel2" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#blogCarousel2" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="blog-card">
+                <img src="Asset/image/blog1.png" class="d-block w-100 blog-img" alt="Blog Image">
+                <div class="blog-content">
+                  <h5 class="blog-title">
+                    How To Change Your Name on Driving Licence in India?..
+                  </h5>
+                  <a href="#" class="read-more">Read More</a>
+                  <p class="blog-meta">By PavitraBee</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="blog-card">
+                <img src="Asset/image/blog2.png" class="d-block w-100 blog-img" alt="Blog Image">
+                <div class="blog-content">
+                  <h5 class="blog-title">
+                    Driving Licence Test Questions and Answers..
+                  </h5>
+                  <a href="#" class="read-more">Read More</a>
+                  <p class="blog-meta">By PavitraBee</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="blog-card">
+                <img src="Asset/image/blog3.png" class="d-block w-100 blog-img" alt="Blog Image">
+                <div class="blog-content">
+                  <h5 class="blog-title">
+                    International Driving Licence in India - How to Apply Online..
+                  </h5>
+                  <a href="#" class="read-more">Read More</a>
+                  <p class="blog-meta">By PavitraBee</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid eligibility-main-container">
+    <div class="row">
+      <div class="col eligibility-submain-container">
+        <div class="eligibility-text-container">
+          <p class="eligibility-heading">Get Started In A Few Simple Clicks</p>
+          <p class="eligibility-text">Evaluate the loan amount you are eligible for and choose an EMI plan that works
+            for you.</p>
+          <button class="eligibility-button-container">
+            <a href="#">
+              Check Eligibility</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <section class="testimonial-section py-5 text-center">
+        <div class="container">
+          <h2 class="testimonial-heading position-relative d-inline-block pb-2 mb-5">Testimonials</h2>
+          <div id="pavitraBeeTestimonials" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner px-md-5">
+              <div class="carousel-item active">
+                <p class="testimonial-text mx-auto mb-4">
+                  PavitraBee is one of the best platforms that I have come across. The thing I like about their service
+                  is that it is extremely fast. When I applied on this platform, the process was completed in just 10-15
+                  minutes! This, I think, is of great help because time is very crucial.
+                </p>
+                <h5 class="author-name mb-0 fw-bold">Vipun Kumar</h5>
+                <small class="author-location text-muted">Gurgaon</small>
+              </div>
+              <div class="carousel-item">
+                <p class="testimonial-text mx-auto mb-4">
+                  The user experience is incredibly smooth. I was looking for a reliable portal and found exactly what I
+                  needed here.The platform's user-friendly interface made it easy for me to navigate through the loan
+                  options and choose the one that best suited my needs.
+                <h5 class="author-name mb-0 fw-bold">Anjali Sharma</h5>
+                <small class="author-location text-muted">Mumbai</small>
+              </div>
+              <div class="carousel-item">
+                <p class="testimonial-text mx-auto mb-4">
+                  The user experience is incredibly smooth. I was looking for a reliable portal and found exactly what I
+                  needed here.The platform's user-friendly interface made it easy for me to navigate through the loan
+                  options and choose the one that best suited my needs.
+                <h5 class="author-name mb-0 fw-bold">Anjali Sharma</h5>
+                <small class="author-location text-muted">Mumbai</small>
+              </div>
+            </div>
+            <button class="carousel-control-prev custom-arrow" type="button" data-bs-target="#pavitraBeeTestimonials"
+              data-bs-slide="prev">
+              <span class="fs-2 fw-bold" aria-hidden="true">&#10094;</span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next custom-arrow" type="button" data-bs-target="#pavitraBeeTestimonials"
+              data-bs-slide="next">
+              <span class="fs-2 fw-bold" aria-hidden="true">&#10095;</span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <section class="faq-section py-5">
+          <div class="container-fluid px-md-5">
+            <div class="text-center mb-5">
+              <h2 class="faq-heading d-inline-block">
+                <span class="fw-bold">Frequently</span>
+                <span class="underline-yellow fw-bold">Asked</span>
+                <span class="fw-bold">Questions</span>
+              </h2>
+            </div>
+            <div class="accordion" id="pavitraBeeFAQ">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button custom-accordion-btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    1. Is PavitraBee RBI approved?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#pavitraBeeFAQ">
+                  <div class="accordion-body custom-faq-body">
+                    The Reserve Bank of India (RBI) does not directly approve digital lending apps. However, PavitraBee
+                    partners with RBI-registered Non-Banking Financial Companies (NBFCs) to offer loan services through
+                    our platform. These partnerships ensure financial institutions abide by RBI regulations when
+                    approving and sanctioning loan applications. PavitraBee is operated by PavitraBee Services Limited,
+                    a Non-Deposit Non-Banking Financial Institution (NBFC), registered with the Reserve Bank of India.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo"> 2. What is the PavitraBee app?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#pavitraBeeFAQ">
+                  <div class="accordion-body custom-faq-body">
+                    PavitraBee is an instant online platform that provides quick and hassle-free services directly to
+                    your bank account or portal in a matter of minutes.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree"> 3. How does the PavitraBee app work?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#pavitraBeeFAQ">
+                  <div class="accordion-body custom-faq-body">
+                    The process is 100% digital. You simply download the app, complete your profile, upload your
+                    required documents, and get approval instantly without stepping out of your home.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                    aria-controls="collapseFour">
+                    4. What are the eligibility criteria to use PavitraBee?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#pavitraBeeFAQ">
+                  <div class="accordion-body custom-faq-body">
+                    To use our services, you must be an Indian resident, above 21 years of age, and have a steady source
+                    of monthly income. You will also need a valid PAN card and Aadhaar card for quick verification.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                    aria-controls="collapseFive">
+                    5. What documents are required for verification?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#pavitraBeeFAQ">
+                  <div class="accordion-body custom-faq-body">
+                    We require minimal documentation to keep the process fast. You only need to provide your PAN card,
+                    Aadhaar card for KYC, and in some cases, a recent bank statement to verify your income details.
+                    Everything is uploaded digitally through the portal.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                    aria-controls="collapseSix">
+                    6. Is my personal data safe with PavitraBee?
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                  data-bs-parent="#pavitraBeeFAQ">
+                  <div class="accordion-body custom-faq-body">
+                    Absolutely. We employ bank-level security and 256-bit encryption to ensure that your personal and
+                    financial information is completely safe and secure. We strictly adhere to data privacy laws and do
+                    not share your data with unauthorized third parties.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+                    aria-controls="collapseSeven">
+                    7. How long does the approval process take?
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                  data-bs-parent="#pavitraBeeFAQ">
+                  <div class="accordion-body custom-faq-body">
+                    PavitraBee's automated system processes applications instantly. Once you submit your profile and
+                    your documents are successfully verified, approvals and processing are typically completed within 10
+                    to 15 minutes.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false"
+                    aria-controls="collapseEight">
+                    8. Are there any hidden charges?
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                  data-bs-parent="#pavitraBeeFAQ">
+                  <div class="accordion-body custom-faq-body">
+                    No, we believe in complete transparency. All processing fees, applicable rates, and charges are
+                    clearly displayed on the portal before you confirm any transaction. What you see is exactly what you
+                    pay.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false"
+                    aria-controls="collapseNine">
+                    9. How can I contact customer support?
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                  data-bs-parent="#pavitraBeeFAQ">
+                  <div class="accordion-body custom-faq-body">
+                    You can reach out to our dedicated support team directly through the 'Help & Support' section in the
+                    PavitraBee portal. Alternatively, you can email us at support@pavitrabee.com or call our customer
+                    care number during business hours.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false"
+                    aria-controls="collapseTen">
+                    10. Can I prepay or close my account early?
+                  </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                  data-bs-parent="#pavitraBeeFAQ">
+                  <div class="accordion-body custom-faq-body">
+                    Yes, you can choose to prepay your active services or close your account early directly through the
+                    PavitraBee portal. There may be nominal prepayment charges depending on the terms of your specific
+                    agreement, which will be clearly displayed before you confirm the closure.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 cta-banner-main-section">
+        <section class="cta-banner-section py-4">
+          <div
+            class="container d-flex flex-column flex-lg-row justify-content-center align-items-center text-center text-lg-start">
+            <span class="cta-text text-white me-lg-4 mb-3 mb-lg-0 fs-5">
+              Achieve more, worry less. Start your journey today with PavitraBee
+            </span>
+            <button class="btn custom-yellow-btn fw-bold px-4 py-2">Apply Now</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <footer class="pavitrabee-footer pt-5 pb-4">
+    <div class="container-fluid px-md-5">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3 mb-4 pe-lg-4">
+          <h2 class="footer-logo fw-bold mb-4 text-white">PavitraBee</h2>
+          <ul class="list-unstyled footer-icon-links">
+            <li><a href="#"><img src="Asset/image/ic_Footer_Call_hover.svg" alt="Contact" class="custom-footer-icon">
+                Contact Us</a></li>
+            <li><a href="#"><img src="Asset/image/ic_Footer_FAQ_hover.svg" alt="FAQ" class="custom-footer-icon"> FAQ</a>
+            </li>
+            <li><a href="#"><img src="Asset/image/ic_Footer_Doc_hover.svg" alt="Lending" class="custom-footer-icon">
+                Responsible Lending</a></li>
+            <li><a href="#"><img src="Asset/image/ic_Footer_Inst-App_hover.svg" alt="App" class="custom-footer-icon">
+                Instant Service App</a></li>
+            <li><a href="#"><img src="Asset/image/ic_Footer_Sitemap_hover.svg" alt="Partner" class="custom-footer-icon">
+                Partner Selection</a></li>
+            <li><a href="#"><img src="Asset/image/ic_Footer_Career_hover.svg" alt="Careers" class="custom-footer-icon">
+                Careers</a></li>
+            <li><a href="#"><img src="Asset/image/ic_Footer_Sitemap_hover.svg" alt="Sitemap" class="custom-footer-icon">
+                Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2 mb-4">
+          <h5 class="footer-heading">Services</h5>
+          <ul class="list-unstyled footer-text-links">
+            <li><a href="#">Personal Insurance</a></li>
+            <li><a href="#">Flexi Policies</a></li>
+            <li><a href="#">Insurance for Self-Employed</a></li>
+            <li><a href="#">Flexi Plans for Salaried</a></li>
+            <li><a href="#">Health Insurance</a></li>
+            <li><a href="#">Business Coverage</a></li>
+            <li><a href="#">Two Wheeler Insurance</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2 mb-4">
+          <h5 class="footer-heading">Our Company</h5>
+          <ul class="list-unstyled footer-text-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Partner with us</a></li>
+            <li><a href="#">Digital Partners</a></li>
+            <li><a href="#">Digital Lead Partner</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Awards</a></li>
+            <li><a href="#">News Board</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2 mb-4">
+          <h5 class="footer-heading">Legal</h5>
+          <ul class="list-unstyled footer-text-links">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Grievance Redressal</a></li>
+            <li><a href="#">Corporate Social Responsibility</a></li>
+            <li><a href="#">Security Centre</a></li>
+            <li><a href="#">Corporate Information</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-8 col-lg-3 mb-4">
+          <div class="d-flex flex-column gap-3 mb-4 align-items-start">
+            <a href="#" class="app-badge-link">
+              <img src="Asset/image/GooglePlay.svg" alt="Get it on Google Play" class="img-fluid app-badge-img">
+            </a>
+            <a href="#" class="app-badge-link">
+              <img src="Asset/image/AppStore.svg" alt="Download on the App Store" class="img-fluid app-badge-img">
+            </a>
+          </div>
+          <div class="social-icons d-flex gap-2 mt-4 justify-content-start">
+            <a href="#"><img src="Asset/image/ic_Facebook.svg" alt="Facebook" class="custom-social-icon"></a>
+            <a href="#"><img src="Asset/image/ic_LinkedIn.svg" alt="LinkedIn" class="custom-social-icon"></a>
+            <a href="#"><img src="Asset/image/ic_Twitter.svg" alt="Twitter" class="custom-social-icon"></a>
+            <a href="#"><img src="Asset/image/ic_YouTube.svg" alt="YouTube" class="custom-social-icon"></a>
+            <a href="#"><img src="Asset/image/ic_Instagram.svg" alt="Instagram" class="custom-social-icon"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="Asset/js/bootstrap.min.js"></script>
+</body>
+
+</html>
