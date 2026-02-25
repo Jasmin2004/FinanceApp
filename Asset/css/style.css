@@ -202,6 +202,7 @@
   display: block;
 }
 
+
 /* Gradient shade */
 .about-image-container::after {
   content: "";
@@ -234,8 +235,8 @@
 .about-text-container {
   background-color: black;
   color: white;
-  padding-left: 3rem;
-  padding-right: 10%;
+  /* padding-left: 3rem;
+  padding-right: 10%; */
 }
 
 .about-text-heading {
@@ -952,7 +953,7 @@
 }
 
 .footer-icon-links a:hover {
-  color: #ffffff;
+  color: #c4c4c4;
 }
 
 .app-badge-img {
@@ -978,7 +979,7 @@
   height: 36px;
   border-radius: 50%;
   border: 1px solid #c4c4c4;
-  color: #ffffff;
+  color: #c4c4c4;
   text-decoration: none;
   transition: all 0.3s;
 }
@@ -1012,7 +1013,7 @@
 }
 
 .footer-icon-links a {
-  color: #ffffff !important;
+  color: #c4c4c4 !important;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -1037,6 +1038,33 @@
 .footer-icon-links a:hover .custom-footer-icon {
   filter: invert(47%) sepia(91%) saturate(2135%) hue-rotate(360deg) brightness(101%) contrast(106%);
 }
+
+.footer-bottom {
+  background-color: #1A1A1A;
+  padding: 10px 0px 10px 0px;
+  color: #c4c4c4;
+  border-top: 1px solid #333;
+}
+
+.footer-item {
+  font-size: 14px;
+}
+
+.footer-item a {
+  color: #c4c4c4;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-item a:hover {
+  color: #f86503;  /* Your orange theme */
+}
+
+.footer-icon {
+  margin-right: 8px;
+  color: #f86503;
+}
+
 
 
 
@@ -1101,6 +1129,13 @@
 
   .banner-text-Two {
     font-size: 18px;
+  }
+
+  .banner-main-container {
+    margin: 60px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    user-select: none;
   }
 
   .banner-list-container {
@@ -1326,6 +1361,18 @@
 
   .customer-sub-container {
     padding-bottom: 20px;
+  }
+
+  .footer-item {
+    margin-bottom: 15px;
+  }
+
+  .pavitrabee-footer{
+    padding-bottom: 30px;
+  }
+
+  .footer-bottom{
+    padding-top: 30px;
   }
 }
 
